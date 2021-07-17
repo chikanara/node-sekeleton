@@ -1,0 +1,37 @@
+const fs = require("fs");
+// console.log(fs)
+// fs.readFile('./code.txt',(err,data) => {
+//     if (err) return console.log(err)
+//     console.log(data)
+// })
+
+
+// fs.readFile('./code.txt','utf-8',(err,data) => {
+//     if (err) return console.log(err)
+//     console.log(data)
+// })
+
+// fs.readFile('./code.txt',(err,data) => {
+//     if (err) return console.log(err)
+//     console.log(data.toString())
+// })
+
+
+// console.log("start reading file ...")
+// fs.readFile('./code.txt',(err,data) => {
+//     if (err) return console.log(err)
+//     console.log(data.toString())
+// })
+// console.log("finish reading file ...")
+
+
+// console.log("start reading file")
+
+// const file = fs.readFileSync("./code.txt","utf-8")
+
+// console.log(file)
+// console.log("finish reading file ...")
+
+// console.log({__dirname,__filename})
+
+

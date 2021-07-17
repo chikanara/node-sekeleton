@@ -1,0 +1,42 @@
+// console.log("hello world ....")
+// const sum = (a,b) => a+b
+// console.log("the sum is",sum(1,2))
+// console.log(process)
+// console.log(process.argv)
+// node app.js "hello world" 2 true
+// const a = process.argv[2]
+// const b = process.argv[3]
+// console.log({a,b})
+// console.log(`the sum of ${a} and ${b} is ${a+b}`)
+// const a = Number(process.argv[2])
+// const b = Number(process.argv[3])
+// console.log(`the sum of ${a} and ${b} is ${a+b}`)
+// import {sum} from "./mathlib"//babel
+// const mathlib = require("./mathlib")
+// console.log(mathlib.sum(a,b))
+
+const mathlib = require("./mathlib")
+const a = Number(process.argv[2])
+const b = Number(process.argv[4])
+const operation = process.argv[3]
+
+
+
+
+switch (operation) {
+    case "+":
+        console.log(`the sum of ${a} and ${b} is ${mathlib.sum(a,b)}`)
+        break;
+    
+    case "-":
+        console.log(`the result of the subtraction of  ${a} and ${b} is ${mathlib.minus(a,b)}`)
+        break;
+
+    case "*":
+        console.log(`the result of the mulplication of  ${a} and ${b} is ${mathlib.multiply(a,b)}`)
+        break;
+    
+    default:
+        console.log("somthing wrong")
+        break;
+}
